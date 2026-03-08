@@ -1,0 +1,8 @@
+name = "Proper Access Theme"
+license = "UNLICENSED"
+description = "Shared Hugo theme for Proper Access websites"
+min_version = "0.126.0"
+
+[author]
+  name = "Proper Access"
+  homepage = "https://www.properaccess.nl"

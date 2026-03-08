@@ -1,0 +1,40 @@
+{{ define "main" }}
+  {{ partial "page-header" . }}
+
+  <section class="section">
+    <div class="container">
+      <div class="tool-overview__intro">{{ .Content }}</div>
+
+      <div class="tool-overview__grid">
+        {{ range .RegularPages }}
+          <a href="{{ .RelPermalink }}" class="tool-card">
+            <div class="tool-card__body">
+              <h2 class="tool-card__title">
+                {{ .Title }}
+                {{ if .Params.beta }}<span class="tool-card__beta">Beta</span>{{ end }}
+              </h2>
+              <p class="tool-card__description">{{ .Description }}</p>
+            </div>
+            {{ with .Params.doelgroep }}
+              <div class="tool-card__tags">
+                {{ range . }}
+                  <span class="tool-card__tag">{{ . }}</span>
+                {{ end }}
+              </div>
+            {{ end }}
+          </a>
+        {{ end }}
+
+        <div class="tool-card tool-card--cta">
+          <div class="tool-card__body">
+            <h2 class="tool-card__title">Meer nodig?</h2>
+            <p class="tool-card__description">We bouwen ook tools op maat voor onze klanten. Behoefte aan een specifieke tool of automatisering? Bespreek de mogelijkheden met Julia Tol.</p>
+          </div>
+          <div class="tool-card__action">
+            <a href="tel:+31628742275" class="tool-card__cta-link">Bel 06-28742275</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{{ end }}
