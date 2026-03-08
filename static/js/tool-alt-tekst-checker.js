@@ -110,6 +110,50 @@
       inButton: "In button",
       ctaHtml: "Want to check all images across your entire website? <a href=\"/contact\">Get in touch</a> for a complete WCAG audit.",
       langLabel: "Schakel naar Nederlands"
+    },
+
+    sv: {
+      toolTitle: "Alt-textkontroll",
+      gateText: "Det h\u00e4r verktyget \u00e4r tillg\u00e4ngligt f\u00f6r kunder hos Proper Access. Ange l\u00f6senordet f\u00f6r att f\u00e5 \u00e5tkomst.",
+      gatePasswordLabel: "L\u00f6senord",
+      gateBtn: "\u00c5tkomst",
+      gateError: "Felaktigt l\u00f6senord. F\u00f6rs\u00f6k igen.",
+      intro: "Ange en URL f\u00f6r att kontrollera alla bilder, SVG:er och ikoner p\u00e5 sidan. Du ser status, placering p\u00e5 sidan och om elementet finns i en l\u00e4nk eller knapp.",
+      urlLabel: "Sidans URL",
+      urlPlaceholder: "https://www.exempel.se",
+      submitBtn: "Kontrollera",
+      submitBusy: "Kontrollerar...",
+      loading: "H\u00e4mtar och analyserar sidan...",
+      fetchError: "Kunde inte analysera sidan. Kontrollera URL:en och f\u00f6rs\u00f6k igen.",
+      lblImages: "Bilder",
+      lblSvgs: "SVG:er",
+      lblIcons: "Ikoner",
+      noneFound: "Inga hittades",
+      present: "finns",
+      missing: "saknas",
+      decorative: "dekorativ",
+      emptyInteractive: "tom i l\u00e4nk/knapp",
+      good: "bra",
+      redundant: "\u00f6verfl\u00f6dig",
+      hidden: "dold",
+      thImage: "Bild",
+      thAltText: "Alt-text",
+      thLocation: "Placering",
+      thContext: "Kontext",
+      thName: "Namn",
+      thIcon: "Ikon",
+      emptyPage: "Inga bilder, SVG:er eller ikoner hittades p\u00e5 denna sida.",
+      altDecorative: 'alt="" (dekorativ)',
+      altMissing: "Alt-attribut saknas",
+      altEmptyInteractive: 'alt="" (tom i interaktivt element)',
+      svgDecorative: "Dekorativ (l\u00e4nk/knapp har redan text)",
+      svgRedundantSuffix: "\u00f6verfl\u00f6dig, l\u00e4nk/knapp har redan text",
+      noName: "Inget namn",
+      noSrc: "ingen src",
+      inLink: "I l\u00e4nk",
+      inButton: "I knapp",
+      ctaHtml: "Vill du kontrollera alla bilder p\u00e5 hela din webbplats? <a href=\"/kontakt\">Kontakta oss</a> f\u00f6r en komplett WCAG-granskning.",
+      langLabel: "Switch to English"
     }
   };
 
@@ -117,11 +161,13 @@
   // i18n helpers
   // ============================================================
 
-  var currentLang = "nl";
-  try { currentLang = localStorage.getItem("pa-tool-lang") || "nl"; } catch (e) { /* private browsing */ }
+  var siteLang = (document.documentElement.lang || "nl").substring(0, 2);
+  if (!LANG[siteLang]) siteLang = "nl";
+  var currentLang = siteLang;
+  try { var stored = localStorage.getItem("pa-tool-lang"); if (stored && LANG[stored]) currentLang = stored; } catch (e) { /* private browsing */ }
 
   function t(key) {
-    return (LANG[currentLang] && LANG[currentLang][key]) || LANG.nl[key] || key;
+    return (LANG[currentLang] && LANG[currentLang][key]) || LANG.en[key] || LANG.nl[key] || key;
   }
 
   function translateDOM() {
@@ -144,7 +190,7 @@
     // Set lang attribute on tool container for screen readers
     var container = document.querySelector(".tool-container");
     if (container) {
-      if (currentLang === "nl") {
+      if (currentLang === siteLang) {
         container.removeAttribute("lang");
       } else {
         container.setAttribute("lang", currentLang);
@@ -153,17 +199,15 @@
   }
 
   function updateLangToggle() {
-    var nlOpt = document.getElementById("langOptNL");
-    var enOpt = document.getElementById("langOptEN");
-    var btn = document.getElementById("langToggle");
-    if (!nlOpt || !enOpt) return;
-    if (currentLang === "en") {
-      nlOpt.classList.remove("tool-pdf__lang-opt--active");
-      enOpt.classList.add("tool-pdf__lang-opt--active");
-    } else {
-      nlOpt.classList.add("tool-pdf__lang-opt--active");
-      enOpt.classList.remove("tool-pdf__lang-opt--active");
+    var allOpts = document.querySelectorAll("[data-lang-opt]");
+    for (var i = 0; i < allOpts.length; i++) {
+      if (allOpts[i].getAttribute("data-lang-opt") === currentLang) {
+        allOpts[i].classList.add("tool-pdf__lang-opt--active");
+      } else {
+        allOpts[i].classList.remove("tool-pdf__lang-opt--active");
+      }
     }
+    var btn = document.getElementById("langToggle");
     if (btn) btn.setAttribute("aria-label", t("langLabel"));
   }
 
@@ -197,7 +241,7 @@
   // Apply stored language on load
   // ============================================================
 
-  if (currentLang !== "nl") {
+  if (currentLang !== siteLang) {
     translateDOM();
     updateLangToggle();
   }
@@ -208,7 +252,14 @@
 
   if (langToggle) {
     langToggle.addEventListener("click", function () {
-      setLang(currentLang === "nl" ? "en" : "nl");
+      setLang(currentLang === "en" ? siteLang : "en");
+    });
+  }
+  // Support individual language option clicks
+  var langOpts = document.querySelectorAll("[data-lang-opt]");
+  for (var li = 0; li < langOpts.length; li++) {
+    langOpts[li].addEventListener("click", function () {
+      setLang(this.getAttribute("data-lang-opt"));
     });
   }
 

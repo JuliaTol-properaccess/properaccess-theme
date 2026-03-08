@@ -18,54 +18,54 @@
   // ============================================================
 
   var LANG_NAMES = {
-    af: { nl: "Afrikaans", en: "Afrikaans" },
-    ar: { nl: "Arabisch", en: "Arabic" },
-    bg: { nl: "Bulgaars", en: "Bulgarian" },
-    ca: { nl: "Catalaans", en: "Catalan" },
-    cs: { nl: "Tsjechisch", en: "Czech" },
-    da: { nl: "Deens", en: "Danish" },
-    de: { nl: "Duits", en: "German" },
-    el: { nl: "Grieks", en: "Greek" },
-    en: { nl: "Engels", en: "English" },
-    es: { nl: "Spaans", en: "Spanish" },
-    et: { nl: "Estlands", en: "Estonian" },
-    eu: { nl: "Baskisch", en: "Basque" },
-    fi: { nl: "Fins", en: "Finnish" },
-    fr: { nl: "Frans", en: "French" },
-    fy: { nl: "Fries", en: "Frisian" },
-    ga: { nl: "Iers", en: "Irish" },
-    gl: { nl: "Galicisch", en: "Galician" },
-    he: { nl: "Hebreeuws", en: "Hebrew" },
-    hi: { nl: "Hindi", en: "Hindi" },
-    hr: { nl: "Kroatisch", en: "Croatian" },
-    hu: { nl: "Hongaars", en: "Hungarian" },
-    id: { nl: "Indonesisch", en: "Indonesian" },
-    is: { nl: "IJslands", en: "Icelandic" },
-    it: { nl: "Italiaans", en: "Italian" },
-    ja: { nl: "Japans", en: "Japanese" },
-    ko: { nl: "Koreaans", en: "Korean" },
-    lt: { nl: "Litouws", en: "Lithuanian" },
-    lv: { nl: "Lets", en: "Latvian" },
-    ms: { nl: "Maleis", en: "Malay" },
-    mt: { nl: "Maltees", en: "Maltese" },
-    nb: { nl: "Noors (Bokm\u00e5l)", en: "Norwegian (Bokm\u00e5l)" },
-    nl: { nl: "Nederlands", en: "Dutch" },
-    nn: { nl: "Noors (Nynorsk)", en: "Norwegian (Nynorsk)" },
-    no: { nl: "Noors", en: "Norwegian" },
-    pl: { nl: "Pools", en: "Polish" },
-    pt: { nl: "Portugees", en: "Portuguese" },
-    ro: { nl: "Roemeens", en: "Romanian" },
-    ru: { nl: "Russisch", en: "Russian" },
-    sk: { nl: "Slowaaks", en: "Slovak" },
-    sl: { nl: "Sloveens", en: "Slovenian" },
-    sq: { nl: "Albanees", en: "Albanian" },
-    sr: { nl: "Servisch", en: "Serbian" },
-    sv: { nl: "Zweeds", en: "Swedish" },
-    th: { nl: "Thais", en: "Thai" },
-    tr: { nl: "Turks", en: "Turkish" },
-    uk: { nl: "Oekra\u00efens", en: "Ukrainian" },
-    vi: { nl: "Vietnamees", en: "Vietnamese" },
-    zh: { nl: "Chinees", en: "Chinese" }
+    af: { nl: "Afrikaans", en: "Afrikaans", sv: "Afrikaans" },
+    ar: { nl: "Arabisch", en: "Arabic", sv: "Arabiska" },
+    bg: { nl: "Bulgaars", en: "Bulgarian", sv: "Bulgariska" },
+    ca: { nl: "Catalaans", en: "Catalan", sv: "Katalanska" },
+    cs: { nl: "Tsjechisch", en: "Czech", sv: "Tjeckiska" },
+    da: { nl: "Deens", en: "Danish", sv: "Danska" },
+    de: { nl: "Duits", en: "German", sv: "Tyska" },
+    el: { nl: "Grieks", en: "Greek", sv: "Grekiska" },
+    en: { nl: "Engels", en: "English", sv: "Engelska" },
+    es: { nl: "Spaans", en: "Spanish", sv: "Spanska" },
+    et: { nl: "Estlands", en: "Estonian", sv: "Estniska" },
+    eu: { nl: "Baskisch", en: "Basque", sv: "Baskiska" },
+    fi: { nl: "Fins", en: "Finnish", sv: "Finska" },
+    fr: { nl: "Frans", en: "French", sv: "Franska" },
+    fy: { nl: "Fries", en: "Frisian", sv: "Frisiska" },
+    ga: { nl: "Iers", en: "Irish", sv: "Irländska" },
+    gl: { nl: "Galicisch", en: "Galician", sv: "Galiciska" },
+    he: { nl: "Hebreeuws", en: "Hebrew", sv: "Hebreiska" },
+    hi: { nl: "Hindi", en: "Hindi", sv: "Hindi" },
+    hr: { nl: "Kroatisch", en: "Croatian", sv: "Kroatiska" },
+    hu: { nl: "Hongaars", en: "Hungarian", sv: "Ungerska" },
+    id: { nl: "Indonesisch", en: "Indonesian", sv: "Indonesiska" },
+    is: { nl: "IJslands", en: "Icelandic", sv: "Isländska" },
+    it: { nl: "Italiaans", en: "Italian", sv: "Italienska" },
+    ja: { nl: "Japans", en: "Japanese", sv: "Japanska" },
+    ko: { nl: "Koreaans", en: "Korean", sv: "Koreanska" },
+    lt: { nl: "Litouws", en: "Lithuanian", sv: "Litauiska" },
+    lv: { nl: "Lets", en: "Latvian", sv: "Lettiska" },
+    ms: { nl: "Maleis", en: "Malay", sv: "Malajiska" },
+    mt: { nl: "Maltees", en: "Maltese", sv: "Maltesiska" },
+    nb: { nl: "Noors (Bokm\u00e5l)", en: "Norwegian (Bokm\u00e5l)", sv: "Norska (Bokmål)" },
+    nl: { nl: "Nederlands", en: "Dutch", sv: "Nederländska" },
+    nn: { nl: "Noors (Nynorsk)", en: "Norwegian (Nynorsk)", sv: "Norska (Nynorsk)" },
+    no: { nl: "Noors", en: "Norwegian", sv: "Norska" },
+    pl: { nl: "Pools", en: "Polish", sv: "Polska" },
+    pt: { nl: "Portugees", en: "Portuguese", sv: "Portugisiska" },
+    ro: { nl: "Roemeens", en: "Romanian", sv: "Rumänska" },
+    ru: { nl: "Russisch", en: "Russian", sv: "Ryska" },
+    sk: { nl: "Slowaaks", en: "Slovak", sv: "Slovakiska" },
+    sl: { nl: "Sloveens", en: "Slovenian", sv: "Slovenska" },
+    sq: { nl: "Albanees", en: "Albanian", sv: "Albanska" },
+    sr: { nl: "Servisch", en: "Serbian", sv: "Serbiska" },
+    sv: { nl: "Zweeds", en: "Swedish", sv: "Svenska" },
+    th: { nl: "Thais", en: "Thai", sv: "Thailändska" },
+    tr: { nl: "Turks", en: "Turkish", sv: "Turkiska" },
+    uk: { nl: "Oekra\u00efens", en: "Ukrainian", sv: "Ukrainska" },
+    vi: { nl: "Vietnamees", en: "Vietnamese", sv: "Vietnamesiska" },
+    zh: { nl: "Chinees", en: "Chinese", sv: "Kinesiska" }
   };
 
   var STOPWORDS = {
@@ -73,7 +73,8 @@
     en: ["the", "a", "an", "is", "in", "it", "of", "to", "and", "for", "that", "this", "with", "are", "was", "on", "not", "be", "have", "from", "or", "by", "at", "but", "they", "which", "you", "can", "more", "will"],
     de: ["der", "die", "das", "und", "ist", "von", "ein", "eine", "den", "dem", "sich", "mit", "auf", "nicht", "auch", "werden", "als", "noch", "nach", "kann", "sind", "wird", "oder", "haben", "diese"],
     fr: ["le", "la", "les", "de", "des", "un", "une", "et", "est", "en", "que", "qui", "dans", "pour", "pas", "sur", "avec", "sont", "plus", "par", "ce", "cette", "aux", "ont", "ses", "mais", "comme"],
-    es: ["el", "la", "los", "las", "de", "en", "un", "una", "que", "es", "por", "con", "para", "del", "son", "se", "como", "pero", "sus", "sobre", "este", "entre"]
+    es: ["el", "la", "los", "las", "de", "en", "un", "una", "que", "es", "por", "con", "para", "del", "son", "se", "como", "pero", "sus", "sobre", "este", "entre"],
+    sv: ["och", "i", "att", "en", "det", "som", "är", "för", "av", "på", "med", "den", "till", "har", "de", "inte", "om", "ett", "men", "var", "kan", "från", "vi", "ska", "sin", "så", "också", "efter", "alla", "eller"]
   };
 
   // ============================================================
@@ -446,6 +447,177 @@
       exportSuffix: " - accessibility-report.html",
       ctaHtml: "Want this tool customized for your organization? Contact <a href=\"tel:+31628742275\">Julia Tol</a> to discuss the options. You\u2019ll love the terms.",
       langLabel: "Schakel naar Nederlands"
+    },
+    sv: {
+      toolTitle: "PDF-tillgänglighetskontroll",
+      gateText: "Det här verktyget är tillgängligt för kunder hos Proper Access. Ange lösenordet för att få åtkomst.",
+      gatePasswordLabel: "Lösenord",
+      gateBtn: "Åtkomst",
+      gateError: "Felaktigt lösenord. Försök igen.",
+      intro: "Ladda upp en PDF-fil för att automatiskt kontrollera den för vanliga tillgänglighetsproblem. 100% utvecklat i Nederländerna, körs helt i din webbläsare — din fil skickas aldrig iväg och lagras ingenstans.",
+      step1: "Välj eller dra en PDF-fil",
+      step2: "Visa och exportera resultaten med konkreta lösningar",
+      uploadAriaLabel: "Dra en PDF hit eller klicka för att ladda upp",
+      uploadText: "Dra en PDF hit",
+      uploadOr: "eller",
+      uploadBtn: "Välj en fil",
+      loading: "Laddar...",
+      loadingPdfJs: "Laddar PDF.js...",
+      openingPdf: "Öppnar PDF...",
+      analyzingPage: "Analyserar sida {0} av {1}...",
+      pageCountSg: "{0} sida",
+      pageCountPl: "{0} sidor",
+      exportBtn: "Exportera resultat",
+      resetBtn: "Kontrollera en annan PDF",
+      errGeneric: "Ett fel uppstod: {0}",
+      errFileRead: "Kunde inte läsa filen.",
+      errPdfJs: "PDF.js kunde inte laddas.",
+      errPdfJsNetwork: "PDF.js kunde inte laddas. Kontrollera din internetanslutning.",
+      catDocument: "Dokument",
+      catHeadings: "Rubriker",
+      catImages: "Bilder",
+      catLists: "Listor",
+      catTables: "Tabeller",
+      catNavigation: "Navigation",
+      badgePass: "Inga problem hittades",
+      badgeFail: "Problem",
+      badgeWarn: "Varning",
+      badgeNa: "Ej tillämpligt",
+      sumPass: "Inga problem hittades",
+      sumFail: "Problem",
+      sumWarn: "Varningar",
+      thPage: "Sida",
+      thElement: "Element",
+      thDetail: "Detalj",
+      fixLabel: "Lösning",
+      fixNoTags: "Öppna PDF-dokumentet i Adobe Acrobat Pro. Gå till <strong>Tillgänglighet &gt; Tagga dokument automatiskt</strong>. Kontrollera sedan taggstrukturen manuellt via taggpanelen. I många fall är det bättre att exportera källdokumentet (Word, InDesign) på nytt med rätt inställningar för taggad PDF.",
+      fixPartialTags: "Inte alla sidor är taggade. Öppna dokumentet i Adobe Acrobat Pro och kontrollera via <strong>Visa &gt; Navigeringspaneler &gt; Taggar</strong> vilka sidor som saknas. Tagga det saknade innehållet manuellt eller exportera källdokumentet på nytt.",
+      fixNoTitle: "Öppna PDF-dokumentet i Adobe Acrobat Pro. Gå till <strong>Arkiv &gt; Egenskaper &gt; Beskrivning</strong> och ange en beskrivande titel. Under <strong>Inledande vy</strong> väljer du att visa dokumenttiteln istället för filnamnet.",
+      fixNoLang: "Öppna PDF-dokumentet i Adobe Acrobat Pro. Gå till <strong>Arkiv &gt; Egenskaper &gt; Avancerat</strong> och ställ in språket (t.ex. \"sv\" för svenska). Du kan också ställa in detta i källdokumentet innan du exporterar.",
+      fixSkippedHeadings: "Justera rubriknivåerna så att de följer en logisk hierarki. En H1 ska följas av en H2, inte av en H3 eller lägre. Använd rätt rubrikformat i källdokumentet eller justera taggarna i Adobe Acrobat Pro via taggpanelen.",
+      fixEmptyHeadings: "Ta bort den tomma rubriktaggen eller lägg till innehåll. I Adobe Acrobat Pro: öppna <strong>taggpanelen</strong>, hitta den tomma rubriktaggen och ta bort den, eller ändra taggen till en <strong>P</strong>-tagg (stycke).",
+      fixNoAlt: "Lägg till alt-text till varje informativ bild. I Adobe Acrobat Pro: högerklicka på Figure-taggen i taggpanelen, välj <strong>Egenskaper</strong> och fyll i fältet \"Alternativ text\". Texten ska beskriva bildens innehåll eller funktion.",
+      fixListStructure: "Korrigera liststrukturen i taggpanelen i Adobe Acrobat Pro. En korrekt lista använder taggarna <strong>L</strong> (lista) &gt; <strong>LI</strong> (listobjekt) &gt; <strong>Lbl</strong> (etikett/punkt) + <strong>LBody</strong> (innehåll). Se till att varje listobjekt följer denna struktur.",
+      fixNoTH: "Markera tabellens rubrikrad eller -kolumn med <strong>TH</strong>-taggar istället för TD-taggar. I Adobe Acrobat Pro: öppna taggpanelen, hitta tabellen och ändra taggarna för rubrikcellerna. Ställ även in <strong>Scope</strong>-attributet (\"Row\" eller \"Column\").",
+      fixNoBookmarks: "Lägg till bokmärken i dokumentet. I Adobe Acrobat Pro: gå till <strong>Visa &gt; Navigeringspaneler &gt; Bokmärken</strong>. Skapa bokmärken för alla rubriker och viktiga avsnitt. Vid export från Word eller InDesign kan du generera dessa automatiskt.",
+      docTagged: "PDF är taggad",
+      docTaggedDesc: "Det här dokumentet innehåller taggar (strukturinformation) som kan användas av skärmläsare.",
+      docPartiallyTagged: "PDF är delvis taggad",
+      docPartiallyTaggedDesc: "Endast {0} av {1} sidor innehåller taggar.",
+      docNoTags: "PDF saknar taggar",
+      docNoTagsDesc: "Det här dokumentet innehåller inga taggar. Utan taggar är innehållet otillgängligt för skärmläsare.",
+      docTitleOk: "Titel finns",
+      docTitleOkDesc: "Dokumenttiteln är: \u201C{0}\u201D",
+      docTitleWeak: "Titeln beskriver kanske inte innehållet",
+      docTitleWeakDesc: "Dokumenttiteln \u201C{0}\u201D är kanske inte tillräckligt beskrivande. En bra titel beskriver dokumentets innehåll.",
+      docNoTitle: "Ingen titel angiven",
+      docNoTitleDesc: "Det här PDF-dokumentet har ingen titel.",
+      docLangOk: "Språk angivet",
+      docLangOkDesc: "Dokumentspråket är inställt på {0} (\u201C{1}\u201D).",
+      docLangOkMeta: "Dokumentspråket är inställt på {0} (\u201C{1}\u201D, via metadata).",
+      docLangUnknown: "Språkinställning inte igenkänd",
+      docLangUnknownDesc: "Språkinställningen \u201C{0}\u201D är inte en känd språkkod. Kontrollera att en giltig ISO 639-språkkod används (t.ex. \u201Csv\u201D eller \u201Csv-SE\u201D).",
+      docLangMismatch: "Möjligt språkfel",
+      docLangMismatchDesc: "Det angivna språket är {0} (\u201C{1}\u201D), men texten verkar vara på {2}.",
+      fixLangInvalid: "Öppna PDF-dokumentet i Adobe Acrobat Pro. Gå till <strong>Arkiv &gt; Egenskaper &gt; Avancerat</strong> och korrigera språkkoden. Använd en giltig ISO 639-kod som \u201Csv\u201D, \u201Csv-SE\u201D, \u201Cen\u201D eller \u201Cen-US\u201D.",
+      docNoLang: "Inget språk angivet",
+      docNoLangDesc: "Språket för det här dokumentet är inte angivet. Utan språkinställning kan en skärmläsare använda fel uttal.",
+      hdNone: "Inga rubriker hittades",
+      hdNoneDesc: "Inga rubrikstrukturer (H1\u2013H6) hittades i taggarna.",
+      hdNa: "Rubriker kan inte kontrolleras",
+      hdNaDesc: "Eftersom dokumentet saknar taggar kan rubriker inte kontrolleras.",
+      hdPresent: "Rubriker finns",
+      hdPresentDesc: "{0} hittades.",
+      hdSg: "rubrik",
+      hdPl: "rubriker",
+      hdSkipped: "Rubriknivåer hoppades över",
+      hdSkippedDesc: "Rubriknivåer hoppas över. Detta gör strukturen otydlig för skärmläsare.",
+      hdOk: "Inga överhoppade rubriknivåer",
+      hdOkDesc: "Inga överhoppade rubriknivåer upptäcktes.",
+      hdEmpty: "Tomma rubriker hittades",
+      hdEmptyDesc: "{0} utan innehåll hittades.",
+      hdNoEmpty: "Inga tomma rubriker",
+      hdNoEmptyDesc: "Alla rubriker innehåller text.",
+      noText: "(ingen text)",
+      emptyHdTag: "Tom rubriktagg",
+      imgNone: "Inga bilder hittades",
+      imgNoneDesc: "Inga Figure-taggar hittades i det här dokumentet.",
+      imgNoAlt: "Bilder utan alt-text",
+      imgNoAltDesc: "{0} av {1} {2} saknar alternativ text. Lägg till alternativ text eller markera bilden som dekorativ.",
+      imgSg: "bild",
+      imgPl: "bilder",
+      imgNoAltDetail: "Ingen alt-text",
+      imgAltOk: "{0} {1} alt-text",
+      imgAltOkSg: "bild har",
+      imgAltOkPl: "bilder har",
+      imgAltOkDesc: "Kontrollera om alt-texterna beskriver innehållet korrekt.",
+      lstNone: "Inga listor hittades",
+      lstNoneDesc: "Inga liststrukturer (L-taggar) hittades.",
+      lstInvalid: "Liststruktur felaktig",
+      lstInvalidDesc: "{0} av {1} {2} har en felaktig taggstruktur.",
+      lstSg: "lista",
+      lstPl: "listor",
+      lstOk: "{0} {1} utan strukturfel",
+      lstOkSg: "lista",
+      lstOkPl: "listor",
+      lstOkDesc: "Taggstruktur L \u2192 LI \u2192 LBody finns.",
+      lstNoItems: "Listan innehåller inga objekt",
+      lstNoLBody: "Listobjekt saknar LBody-tagg",
+      lstNoLI: "Listan innehåller inga LI-taggar",
+      tblNone: "Inga tabeller hittades",
+      tblNoneDesc: "Inga tabellstrukturer (Table-taggar) hittades.",
+      tblNoTH: "Tabellrubriker saknas",
+      tblNoTHDesc: "{0} av {1} {2} saknar rubrikmarkeringar (TH-taggar).",
+      tblSg: "tabell",
+      tblPl: "tabeller",
+      tblOk: "{0} {1} med rubriker",
+      tblOkSg: "tabell",
+      tblOkPl: "tabeller",
+      tblOkDesc: "Rubrikmarkeringar (TH-taggar) finns.",
+      tblRows: "{0} rader",
+      tblRowsCols: "{0} rader, {1} kolumner",
+      tblNoTHDetail: "inga TH-taggar",
+      tblSingleCell: "Möjlig felaktig användning av tabellstruktur",
+      tblSingleCellDesc: "{0} av {1} {2} innehåller bara en cell. Detta kan tyda på felaktig användning av en tabellstruktur för layout.",
+      tblSingleCellDetail: "bara 1 cell",
+      fixSingleCell: "Kontrollera om tabellstrukturen är nödvändig. Om tabellen bara används för layout, ta bort Table-taggen och använd en lämplig strukturtagg som <strong>P</strong> eller <strong>Div</strong>.",
+      navNa: "Bokmärken kan inte kontrolleras",
+      navNaDesc: "Eftersom dokumentet saknar taggar är navigationskontrollerna begränsade.",
+      navOk: "Bokmärken finns",
+      navOkDesc: "{0} hittades.",
+      navSg: "bokmärke",
+      navPl: "bokmärken",
+      navBookmark: "Bokmärke",
+      navMore: "och {0} till\u2026",
+      navNone: "Inga bokmärken",
+      navNoneDesc: "Det här dokumentet har {0} sidor men innehåller inga bokmärken.",
+      navNotReq: "Bokmärken krävs inte",
+      navNotReqDesc: "Det här dokumentet är kort ({0}).",
+      navPageSg: "sida",
+      navPagePl: "sidor",
+      disclaimer: "Observera: det här verktyget utför endast automatiserade kontroller. Resultaten garanterar inte fullständig tillgänglighet eller överensstämmelse med WCAG-riktlinjerna. En manuell granskning av en specialist är fortfarande nödvändig.",
+      disclaimerListIntro: "Det här verktyget kan bland annat inte tillförlitligt kontrollera:",
+      disclaimerItems: [
+        "Korrekt logisk användning av strukturelement (rubriker, listor, tabeller etc.)",
+        "Kvalitet på alternativa texter",
+        "Bilder som innehåller text",
+        "Diagram",
+        "Komplexa tabeller",
+        "Otaggade element",
+        "Textkontrast i bilder",
+        "Kontrast av informativa element",
+        "Noggrannhet i textfärgkontrast",
+        "Meningsfull ordning av information",
+        "Språkigenkänning vid korta eller flerspråkiga dokument",
+        "Fullständighet av stycketext (fragment, oavslutade meningar)"
+      ],
+      docsSummary: "Vad kontrollerar det här verktyget?",
+      exportTitle: "PDF-tillgänglighetsrapport",
+      exportFileLbl: "Fil",
+      exportFooter: "Genererat med PDF-tillgänglighetskontrollen av Proper Access — properaccess.se/verktyg/pdf-checker",
+      exportSuffix: " - tillgänglighetsrapport.html",
+      ctaHtml: "Vill du ha det här verktyget anpassat för din organisation? Kontakta <a href=\"tel:+31628742275\">Julia Tol</a> för att diskutera möjligheterna.",
+      langLabel: "Switch to English"
     }
   };
 
@@ -453,11 +625,13 @@
   // i18n helpers
   // ============================================================
 
-  var currentLang = "nl";
-  try { currentLang = localStorage.getItem("pa-tool-lang") || "nl"; } catch (e) { /* private browsing */ }
+  var siteLang = (document.documentElement.lang || "nl").substring(0, 2);
+  if (!LANG[siteLang]) siteLang = "nl";
+  var currentLang = siteLang;
+  try { var stored = localStorage.getItem("pa-tool-lang"); if (stored && LANG[stored]) currentLang = stored; } catch (e) { /* private browsing */ }
 
   function t(key) {
-    return (LANG[currentLang] && LANG[currentLang][key]) || LANG.nl[key] || key;
+    return (LANG[currentLang] && LANG[currentLang][key]) || LANG.en[key] || LANG.nl[key] || key;
   }
 
   /** Template: tf("key", val0, val1) replaces {0}, {1}, ... */
@@ -496,13 +670,13 @@
     var docsNl = document.querySelector(".tool-pdf__docs-nl");
     var docsEn = document.querySelector(".tool-pdf__docs-en");
     if (docsNl && docsEn) {
-      docsNl.hidden = currentLang !== "nl";
+      docsNl.hidden = currentLang === "en";
       docsEn.hidden = currentLang !== "en";
     }
     // Set lang attribute on tool container for screen readers
     var container = document.querySelector(".tool-container");
     if (container) {
-      if (currentLang === "nl") {
+      if (currentLang === siteLang) {
         container.removeAttribute("lang");
       } else {
         container.setAttribute("lang", currentLang);
@@ -511,17 +685,15 @@
   }
 
   function updateLangToggle() {
-    var nlOpt = document.getElementById("langOptNL");
-    var enOpt = document.getElementById("langOptEN");
-    var btn = document.getElementById("langToggle");
-    if (!nlOpt || !enOpt) return;
-    if (currentLang === "en") {
-      nlOpt.classList.remove("tool-pdf__lang-opt--active");
-      enOpt.classList.add("tool-pdf__lang-opt--active");
-    } else {
-      nlOpt.classList.add("tool-pdf__lang-opt--active");
-      enOpt.classList.remove("tool-pdf__lang-opt--active");
+    var allOpts = document.querySelectorAll("[data-lang-opt]");
+    for (var i = 0; i < allOpts.length; i++) {
+      if (allOpts[i].getAttribute("data-lang-opt") === currentLang) {
+        allOpts[i].classList.add("tool-pdf__lang-opt--active");
+      } else {
+        allOpts[i].classList.remove("tool-pdf__lang-opt--active");
+      }
     }
+    var btn = document.getElementById("langToggle");
     if (btn) btn.setAttribute("aria-label", t("langLabel"));
   }
 
@@ -566,7 +738,7 @@
   // Apply stored language on load
   // ============================================================
 
-  if (currentLang !== "nl") {
+  if (currentLang !== siteLang) {
     translateDOM();
     updateLangToggle();
   }
@@ -577,7 +749,14 @@
 
   if (langToggle) {
     langToggle.addEventListener("click", function () {
-      setLang(currentLang === "nl" ? "en" : "nl");
+      setLang(currentLang === "en" ? siteLang : "en");
+    });
+  }
+  // Support individual language option clicks
+  var langOpts = document.querySelectorAll("[data-lang-opt]");
+  for (var li = 0; li < langOpts.length; li++) {
+    langOpts[li].addEventListener("click", function () {
+      setLang(this.getAttribute("data-lang-opt"));
     });
   }
 
